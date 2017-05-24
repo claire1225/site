@@ -21,14 +21,20 @@
     <script src="js/jquery.min.js"></script>
   </head>
   <body>
-    <h1>你好，世界！</h1>
-    <div style="height: 100px;background-color: #1F7507"></div>
-    <div class="container"></div>
-    <div class="container-fluid"></div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <div class="container">
+      <h3>Tooltip Example</h3>
+      <p>Tooltips are not CSS-only plugins, and must therefore be initialized with jQuery: select the specified element and call the tooltip() method.</p>
+      <a href="#" data-toggle="tooltip" title="Hooray!" class="tool_tip">Hover over me</a>
+       
+      <h3>工具提示範例2</h3>
+      <p>Tooltips are not CSS-only plugins, and must therefore be initialized with jQuery: select the specified element and call the tooltip() method.</p>
+      <a href="#" data-toggle="tooltip" title="請按我" class="tool_tip">Hover over me</a>
+    </div>
+     
+    <script>
+    $(document).ready(function(){
+        $('.tool_tip').tooltip();   
+    });
+    </script>
   </body>
 </html>
